@@ -1,0 +1,5 @@
+all: BurningShip
+
+BurningShip: src/BurningShip.cpp
+	g++ -o BurningShip -g src/BurningShip.cpp -framework OpenGL `pkg-config --cflags --libs sdl2 glew`
+
